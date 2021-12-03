@@ -1,0 +1,133 @@
+
+{{> header}}
+<!-- Jobpost Section -->
+
+<section class='jobpost'>
+
+  <!-- Welcome message -->
+  <h1 class='heading_pink'>Post a job</h1>
+
+  <div class='jobpost_container'>
+
+    <fieldset class='fieldset_body'>
+      <figcaption class='fieldset_caption'>Job details</figcaption>
+
+      <form action='' method='post' id='jobpost_form'>
+        <div class='item'>
+          <div class='item-1'>
+            <div>
+              <h2>Company name:</h2>
+              <input
+                type='text'
+                name='company name'
+                class='input_text'
+                style='display: block;
+  height: 40px;
+  width: 250px;
+  text-indent: 3px;
+  font-size: 20px; border: 1px solid var(--color_black);'
+                required
+              />
+            </div>
+            <div class=''><h2>Job title:</h2>
+
+              <input
+                type='text'
+                name='job title'
+                class='input_text'
+                style='display: block;
+  height: 40px;
+  width: 250px;
+  text-indent: 3px;
+  font-size: 20px; border: 1px solid var(--color_black);'
+                required
+              /></div>
+
+            <div class=''>
+              <h2>Location:</h2>
+              <input
+                type='text'
+                name='location'
+                class='input_text'
+                style='display: block;
+  height: 40px;
+  width: 250px;
+  text-indent: 3px;
+  font-size: 20px; border: 1px solid var(--color_black);'
+                required
+              /></div>
+
+          </div>
+          <div class='item-2'><div class=''><h2>Skills required:</h2>
+
+              <input
+                type='text'
+                name='Skills required'
+                class='input_text'
+                style='display: block;
+  height: 40px;
+  width: 250px;
+  text-indent: 3px;
+  font-size: 20px; border: 1px solid var(--color_black);'
+                required
+              />
+            </div>
+
+            <div class=''><h2>Employment type: </h2>
+
+              <select name='cars' class='category_options'>
+                <option value='Full time'>Full time</option>
+                <option value='Part time'>Part time</option>
+                <option value='Intern'>Intern</option>
+              </select></div></div>
+          <div class='item-3'><div class=''>
+              <h2>Industry type: </h2>
+
+              <select name='cars' class='category_options'>
+                <option value='Tech'>Tech</option>
+                <option value='IT'>IT</option>
+                <option value='Product basedIntern'>Product based</option>
+                <option value='Service'>Service</option>
+              </select></div>
+
+            <div class=''><h2>Experience : </h2>
+
+              <select name='cars' class='category_options'>
+                <option value='0-1'>0-1</option>
+                <option value='1-5'>1-5</option>
+                <option value='5+'>5+</option>
+              </select></div>
+          </div>
+
+          <div class='item-4'><h2>Job description :</h2>
+            <textarea
+              name='description'
+              id='recruiter_description'
+              cols='155'
+              rows='10'
+            ></textarea></div>
+
+        </div>
+
+        <input
+          type='checkbox'
+          name='checkbox'
+          class='input_checkbox'
+          required
+        />
+        <p class='paragraph_grey' style='display: inline;'>* I agree all terms
+          and conditions.</p>
+        <button
+          class='button_rect-small'
+          type='submit'
+          style='display: block;'
+        >Post</button>
+
+      </form>
+
+    </fieldset>
+
+  </div>
+</section>
+<!-- Footer -->
+{{> footer}}

@@ -1,0 +1,5 @@
+.env
+/node_modules
+/ss
+/public/feather-icons
+/public/images

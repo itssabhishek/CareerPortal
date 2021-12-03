@@ -1,0 +1,48 @@
+{{> header}}
+{{> navbar}}
+
+<section>
+  <center><h1 class='heading_pink'>What to do after 10<sup
+        style='font-size: 1rem;'
+      >th</sup>?</h1></center>
+
+  <section class='content'>
+    <ul class='content_list'>
+      <h2
+        class='subheading_blue'
+        style='font-size: 30px; display:inline'
+      >"Science, commerce, or arts?"</h2>
+      <h2 style='display:inline'>
+        -- this is a common confusion which most of the students face after
+        their 10th results are out. Few students are very clear about what they
+        want in their life. But on the other hand, there are many students who
+        are confused and clueless while choosing their career after class 10th.
+        Choosing the correct path is very crucial. Nowadays every field has lots
+        of opportunities but one should always choose according to their
+        interests…<br />So here are some options:</h2>
+      {{#list school}}
+        <div class='content_list-block'>
+          <li
+            class='subheading_blue content_list-block--heading'
+            style='font-size: 30px;'
+          >{{{heading}}}</li><p
+            class='paragraph_grey content_list-block--paragraph'
+          >{{{content}}}</p>
+        </div>
+        <br />
+      {{/list}}
+      <h2 style='display:inline'>
+        Choosing a career is one of the important decisions in your life. The
+        right decision at the correct time will help to reach the great height
+        of success within a short period of time.<br />
+        So it's very important for a student to choose the field according to
+        their skills, interests, and abilities.<br /><br />
+        All the best. May you choose your career according to your skills and
+        interests.
+      </h2>
+
+    </ul>
+  </section>
+</section>
+
+{{> footer}}

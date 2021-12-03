@@ -1,0 +1,112 @@
+{{> header}}
+
+<!-- SignUp Section -->
+
+<section class="signup">
+
+<!-- Welcome message -->
+<h1 class="heading_pink">Welcome to our Family</h1>
+
+<div class="signup_container">
+
+<fieldset class="fieldset_body">
+<figcaption class="fieldset_caption">Registration</figcaption>
+
+<form action="/signup" method="POST">
+<h2>First Name:</h2>
+    <input
+      type="text"
+      name="fname"
+      class="input_text"
+      placeholder="Enter First name.."
+      style="height: 40px; text-indent: 3px; font-size: 20px;"
+      required
+    />
+    <h2> Last Name:</h2>
+     
+    <input
+      type="text"
+      name="lname"
+      class="input_text"
+      placeholder="Enter your last name:"
+      style="height: 40px; text-indent: 3px; font-size: 20px;"
+      required
+    />
+     
+       <h2> Email address:</h2>
+        <input
+      type="email"
+      name="email"
+      class="input_email"
+      placeholder="Email address"
+      required
+      style="height: 40px; text-indent: 3px; font-size: 20px; box-shadow: none; border-radius: 0;"
+    />
+    <span>
+   <h2> Password:</h2>
+   
+  
+<input
+      type="password"
+      name="password"
+      class="input_password"
+      placeholder="Password"
+      required
+      style="height: 40px; text-indent: 3px; font-size: 20px; box-shadow: none; border-radius: 0;"
+    />
+  
+    <h2>Confirm Password:</h2>
+     <input
+     
+      type="password"
+      name="cpassword"
+      class="input_password"
+      placeholder=" Confirm Password"
+      required
+      style="height: 40px; text-indent: 3px; font-size: 20px; box-shadow: none; border-radius: 0;"
+      
+    />
+    
+ <h2>Choose Your Profession: </h2>
+                                                                                                
+    <select name="profession" class="category_options">
+    <option value="School Student">School Student</option>
+    <option value="High School Student">High School Student</option>
+    <option value="Graduate">Graduate</option>
+    <option value="Job Seeker">Job Seeker</option>
+    <option value="Freelancer">Freelancer</option>
+    <option value="Recruiter">Recruiter</option>
+    </select>
+
+  <input
+      type="checkbox"
+      name="checkbox"
+      class="input_checkbox"
+      required
+    /> <p class="paragraph_grey" style="display: inline;">* I agree all terms and conditions.</p>
+    
+    
+
+      <center><button class="button_rect-large" name="signup" type="submit">Register</button></center>
+</form>
+ </fieldset>
+
+ <div class="signup_text">
+   <h1 class="heading_blue" style="font-size: 3rem;">Why Join?</h1>
+<h2 class="subheading_blue">As a member, you will be able to grow your Key Competencies in the following three areas:</h2>
+<p class="paragraph_grey">
+1. Understanding and developing yourself
+Plan your career based on an understanding of your unique career interests and personality.
+<br>
+2. Explore life, learning and work
+Learn about the education and employment opportunities available throughout Ireland.
+<br>
+3. Developing and managing your career
+Learn how to grow your career, search for jobs, create effective CVs and develop your career skills.</p>
+<p>
+Note: Your profile is completely private - you are the only one who can access this information. See our Privacy Policy for more information.</p>
+ </div>
+</div>
+</section>
+    <!-- Footer -->
+{{> footer}}
