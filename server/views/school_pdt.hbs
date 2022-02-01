@@ -1,0 +1,18 @@
+
+
+{{> header}}
+{{> navbar}}
+<section>
+         <center><h1 class="heading_pink">Personality development tips</h1></center>
+          <section class="chain">
+          <ul class="chain_list">
+          {{#list school}}
+            <div class="chain_list-block">
+             <li class="chain_list-block--heading">{{heading}}</li>
+             <p class="paragraph_grey chain_list-block--content" style="margin-left: 22px;">{{content}}</p>
+            </div>
+          {{/list}}
+          </ul>
+        </section>
+</section>
+{{> footer}}

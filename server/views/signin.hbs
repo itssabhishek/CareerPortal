@@ -1,0 +1,68 @@
+{{> header}}
+
+<section class='signIn'>
+  <h1 class='heading_pink'>Sign In</h1>
+  <div class='signIn_box'>
+    <div class='signIn_box-left'>
+      <i
+        class='fa fa-user'
+        style='color: var(--color_blue); font-size: xx-large'
+      ></i>
+      <form action='/signin' method='POST' class="signIn_box-left">
+
+        <input
+          type='email'
+          name='email'
+          class='signIn_box-mail input_email'
+          placeholder='xyz@any.com'
+        />
+        <input
+          type='password'
+          name='password'
+          class='signIn_box-pass input_password'
+          placeholder='1234567890'
+        />
+
+        {{#if invalid}}
+         <h2 style="color: red;">Invalid Credeantials! please try again.</h2>
+        {{/if}}
+
+        <h3 class='signIn_box-nu subheading_pink'>
+          New user?
+          <a
+            href='/signup'
+            style='text-decoration: underline'
+            class='subheading_blue'
+          >Click here</a>
+        </h3>
+
+        <h3 class='signIn_box-fp subheading_pink'>
+          Forget password?
+          <a
+            href='#'
+            style='text-decoration: underline'
+            class='subheading_blue'
+          >Click here</a>
+        </h3>
+        <button
+          class='button_rect-large'
+          name='signin'
+          type='submit'
+        >SignIn</button>
+        <h2>Or</h2>
+        
+      </form>
+      <a href="/google">
+        <button class='button_google'>
+          <i class='fab fa-google fa-2x'></i>
+          <h2 style='font-size: 1.7rem'>Sign In with Google</h2>
+        </button>
+        </a>
+    </div>
+    <div class='signIn_box-right'>
+      <img src='images/welcome.jpg' alt='Welcome' />
+    </div>
+  </div>
+</section>
+
+{{> footer}}

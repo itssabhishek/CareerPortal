@@ -1,0 +1,147 @@
+
+{{> header}}
+{{> navbar}}
+   
+    <!-- Welcome Page -->
+    <section class='header_welcome'>
+      <div class='header_welcome-left'>
+        <h1 class='header_welcome-message'>Welcome to</h1>
+        <br />
+        <h1 class='gradient shadow-text' style='font-size: 3.5rem'>
+          Career Portal
+        </h1>
+        <br />
+        <p
+          class='paragraph_grey'
+          style='
+            inline-size: 80%;
+            margin: 20px;
+            margin-left: 0%;
+            overflow-wrap: break-word;
+          '
+        >
+          Do you often encounter uncertainties around your career path? <br>
+          If yes, you are not the only one on the list. <br>
+          People generally face a lot of dilemmas throughout their lives.<br>
+          They might be concerned about what stream to opt for, which career path should they follow, or whether they should change their job. <br>
+          Various factors decide the career path for any person. Interests, potential, and scope are few vital checkpoints here. A mere piece of advice can move your life in a 360 degree angle. Do not worry, career guidance might come as a lifesaver here. Explore our site to know more.
+        </p>
+        <a class='gradient' href='#category'>Explore &rarr;</a>
+      </div>
+      <div class='header_welcome-right'>
+        <img
+          src='/images/step-by-step-ge9e9b6b50_1280.jpg'
+          alt='Step'
+          class='header_welcome-image'
+        />
+      </div>
+    </section>
+    <!-- Search by -->
+    <section class='search'>
+      <h1 class='heading_pink'>Search by</h1>
+      <div class='search_types'>
+        <ul class='search_types-items'>
+          <li class='search_types-items-1 active'><a href='#'>Courses</a></li>
+          <li class='search_types-items-2'><a href='#'>Career</a></li>
+          <li class='search_types-items-3'><a href='#'>Career Sectors</a></li>
+          <li class='search_types-items-4'><a href='#'>Colleges</a></li>
+        </ul>
+        <div class='search_bar'>
+          <input
+            type='text'
+            name='text'
+            class='search_bar-input input_text'
+            placeholder='Search..'
+          />
+          <button class='search_bar-button'>Search</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Choose Category -->
+
+    <section class='category' id="category">
+      <h1 class='heading_pink'>Choose Category</h1>
+      <div class='category_list'>
+        <div class='category_list-item'>
+          <div class='box box_shadow'>
+            <img src='/images/SchoolStudent.jpg' alt='' srcset='' />
+          </div>
+          <a href='/school'><h2 class='subheading_black'>School Student</h2></a>
+        </div>
+        <div class='category_list-item'>
+          <div class='box box_shadow'>
+            <img src='/images/HighSchoolStudent.jpg' alt='' srcset='' />
+          </div>
+          <a href='/highschool'><h2 class='subheading_black'>High School Student</h2></a>
+        </div>
+        <div class='category_list-item'>
+          <div class='box box_shadow'>
+            <img src='/images/Graduate.jpg' alt='' srcset='' />
+          </div>
+          <a href='/graduate'><h2 class='subheading_black'>Graduate</h2></a>
+        </div>
+        <div class='category_list-item'>
+          <div class='box box_shadow'>
+            <img src='/images/JobSeeker.jpg' alt='' srcset='' />
+          </div>
+          <a href='/jobs'><h2 class='subheading_black'>Job Seeker</h2></a>
+        </div>
+        <div class='category_list-item'>
+          <div class='box box_shadow'>
+            <img src='/images/Freelancer.jpg' alt='' />
+          </div>
+          <a href='/freelancer'><h2 class='subheading_black'>Freelancer</h2></a>
+        </div>
+        <div class='category_list-item'>
+          <div class='box box_shadow'>
+            <img src='/images/Recruiter.jpg' alt='' srcset='' />
+          </div>
+          <a href='/recruiter'><h2 class='subheading_black'>Recruiter</h2></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- News -->
+
+    <section class='news'>
+      <h1 class='heading_pink'>News</h1>
+      <div class='news_list'>
+        <div class='box_shadow news_list-item'>
+          <a href='#'><img src='/images/news-1.jpg' alt='' /></a>
+        </div>
+
+        <div class='box_shadow news_list-item'>
+          <a href='#'><img src='/images/news-2.jpg' alt='' /></a>
+        </div>
+
+        <div class='box_shadow news_list-item'>
+          <a href='#'><img src='/images/news-3.jpg' alt='' /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events -->
+
+    <section class='events'>
+      <h1 class='heading_pink'>Events</h1>
+      <div class='events_list'>
+        {{#if registered}}
+           {{#each events.videos}}
+        <div class='box_shadow events_list-item'>
+         <iframe height="100%" width="100%" src="https://www.youtube.com/embed/{{this}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+          {{/each}}
+          {{else}}
+          {{#each events.images}}
+           <div class='box_shadow events_list-item'>
+         <img src="/images/{{this}}" alt="Event images">
+        </div>
+        {{/each}}
+        {{/if}}
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+{{> footer}}

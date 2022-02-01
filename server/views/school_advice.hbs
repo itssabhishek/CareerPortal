@@ -1,0 +1,27 @@
+
+{{> header}}
+{{> navbar}}
+<section>
+         <center><h1 class="heading_pink">Advice</h1></center>
+
+       
+  <section class='content'>
+    <ul class='content_list'>
+      <h2>10th standard is an important point in the life of an Indian student. It is at this point that a student has to decide about his/her future. This is a question that pops up in front of many students- ‘which stream to select after 10th?’. Talking about streams after 10th, there are three main ones available- Science, Commerce and Arts. It is quite natural for students to get confused at this juncture. This article will guide you and help you select the right stream. Here, I’ve mentioned some tips and advice, using which, you will be able to find the stream that suits you the best!</h2>
+      {{#list school}}
+        <div class='content_list-block'>
+          <h3
+            class='subheading_blue content_list-block--heading'
+            style='font-size: 30px;'
+          >{{{heading}}}</h3><p
+            class='paragraph_grey content_list-block--paragraph'
+          >{{{content}}}</p>
+        </div>
+        <br />
+      {{/list}}
+
+    </ul>
+  </section>
+        </section>
+
+{{> footer}}

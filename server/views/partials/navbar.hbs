@@ -1,0 +1,36 @@
+{{! Navbar partial }}
+<header>
+  <nav class="navbar">
+    <a href="/" style="display: inline-block">
+      <object
+        data="/images/background.png"
+        width="100"
+        height="80"
+        style="pointer-events: none"
+      ></object>
+    </a>
+    <div class="navbar_search">
+      <input
+        type="text"
+        name="search-bar"
+        id="search"
+        placeholder="Search..."
+        maxlength="15"
+      />
+      <a href=""><i data-feather="search" class="navbar_search-icon"></i></a>
+    </div>
+    {{#if registered}}
+      <h1 class="gradient">{{name}}</h1>
+      <div class="navbar_icons">
+        <a href=""><i data-feather="bell"></i></a>
+        <a href=""><i data-feather="user"></i></a>
+        <a href=""><i data-feather="settings"></i></a>
+      </div>
+    {{else}}
+      <div class="navbar_registration">
+        <a href="/signin"><h2 class="subheading_pink">SignIn</h2></a>
+        <a href="/signup"><h2 class="subheading_pink">Create an account</h2></a>
+      </div>
+    {{/if}}
+  </nav>
+</header>
